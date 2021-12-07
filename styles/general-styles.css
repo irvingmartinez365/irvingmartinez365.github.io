@@ -1,0 +1,373 @@
+/*===========|FONTS FROM GOOGLE FONTS|==============*/
+
+    /*------|ROBOTO FONT|------*/
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+    /*-----------|WORK SANS FONT|-----------*/
+    @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap');
+
+/*==============|RESET STYLES|================*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+ul{
+    list-style: none;
+}
+
+
+/*--------------|ORIGINAL VARIABLES (FIRST MOBILE WEB DESIGN)|----------*/
+:root{
+    /*--------|COLORS|---------*/
+
+    --main-color: rgba(250, 154, 85);
+    
+    --color-2: rgba(252, 97, 73, 1);
+    
+
+    --paragraph-size: 1.2rem;  
+    --brand-size: 20px;    
+    --icon-size: 3rem;
+    --text-size: 1.3rem;
+    --titles-size: 1.6rem;
+    --data-size: 1.1rem;
+}
+
+.container--flex{
+    display: flex;
+}
+/*---------------------|GENERAL STYLES|---------------------*/
+    /*-------|NAV / HEADER STYLES|-------*/
+    .header{
+        width: 100%;
+        background: white;
+    }
+    .superior{
+        position: relative;
+        width: 100%;
+        padding: 15px 10px;
+    }
+    
+    .brand{
+        font-size: var(--brand-size);
+        width: 100%;
+        color: var(--color-2);
+    }
+    .nav-btn{
+        position: fixed;
+        right: 15px;
+        top: 15px;
+        font-size: 1.6em;
+        color:  var(--main-color);
+        cursor: pointer;
+    }
+    .nav{
+        position: fixed;
+        left: -100%;
+        width: 100%; 
+        transition: left .4s;
+
+    }
+    .show{
+        left: 0;
+    }
+    .menu-element__link{
+        display: block;
+        padding: 20px;
+        background: var(--main-color);
+        text-decoration: none;
+        color: white;
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .divition{
+        border: none;
+        background: var(--main-color);
+        height: 16px;
+        width: 100%;
+        margin: 10px 0;
+    
+    }
+    /*----|MAIN STYLES|------*/
+    .main-content{
+        margin: 0 10px;
+    }
+    .section{
+        margin: 60px 0;
+    }
+    .section-title{
+        color: var(--main-color);
+        font-size: var(--titles-size);
+    }
+    .section-txt{
+        font-size: var(--text-size);
+        margin: 15px 0;
+    }
+    .message{
+        font-size: var(--text-size);
+    }
+    .welcome{
+        text-align: center;
+    }
+    /*---------|FOOTER STYLES|-----------*/
+    .footer{
+        height: 275px;
+        background:var(--main-color);
+        color: white;
+        padding: 50px 0;
+        margin-top: 20px;
+        display: flex;    
+        justify-content: center;
+        align-items: center;
+    
+    }
+   
+    .copy{
+        font-size: 18px;
+        margin: 20px 0;
+    }
+    
+    .social{
+        justify-content: space-between;
+        width: 70%;
+        margin: 20px auto;
+    }
+    
+    .social-element__link{
+
+        color: white;
+        font-size: var(--icon-size);
+        transition: color .4s;
+    }
+    .twitter:hover{
+        color: #00acee;
+    }
+    .github:hover{
+        color: #171515;
+    }
+    .discord:hover{
+        color: #7289da;
+    }
+
+/*----------|ARTICLE STYLES|-----------*/
+.article-title,
+.subtitle,
+.subtitle-l-2{
+    color: black;
+}
+.article-cover{
+    margin-bottom: 20px;
+}
+.article-section{
+    margin: 15px 0;
+}
+
+.article-title{
+    font-family: 'Work Sans';
+    font-size: 2.5rem;
+    margin: 10px 0;
+}
+.cover{
+    margin-bottom: 10px;
+}
+.article-author{
+    font-size: var(--data-size);
+    
+}
+.article-author__name{
+    font-style: italic;
+}
+.article-img{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.paragraph{
+    font-size: var(--paragraph-size);
+    margin: 20px 0;
+}
+.strong{
+    font-weight: bolder;
+}
+a{
+    color: var(--main-color)
+}
+code{
+    background: #eee;
+}
+.subtitle{
+    font-size: var(--titles-size);
+}
+
+.subtitle-l-2{
+    font-size: 1.5rem;
+}
+
+.subtitles-l-3{
+    font-size: 1.2rem;
+}
+
+.list{
+    padding-left: 10%;
+    font-size: var(--paragraph-size);
+    list-style: square;
+}
+.list-element{
+    margin: 10px 0;
+}
+.article-info{
+    text-align: right;
+
+}
+
+.notecard{
+    font-size: 1.1rem;
+    font-style: italic;
+    background: var(--main-color);
+    padding: 20px;
+    color: #ffffff;
+    border-left: 8px solid var(--color-2);
+}
+.notecard__link{
+    color: #fff;
+    font-weight: bold;
+}
+
+/*================TABLETS======================*/
+@media screen and (min-width: 600px) {
+    :root{
+        --paragraph-size: 1.4rem;  
+        --brand-size: 24px;    
+        --text-size: 1.5rem;
+        --titles-size: 2rem; 
+        --data-size: 1.2rem;
+    }
+    .cover-img{
+        width: 100%;
+    }
+    .article-img{
+        width: 80%;
+    }
+    .small-img{
+        width: 25%;
+    }
+    .nav-btn{
+        top: 15px;
+        right: 15px;
+    }
+    .copy{
+        font-size: 1.3rem;
+    }
+    .nav-btn{
+        font-size: 1.8em;
+    }
+    .menu-element__link{
+        padding: 30px 0;
+    }
+}
+/*=============DESKTOP SMALL-MID DISPLAY================*/
+@media screen and (min-width: 1020px){
+    body{
+        padding-top: 69px;
+    }
+    .header{
+        position: fixed;
+        display: flex;
+        top: 0;
+        left: 0;
+        align-items: center;
+        z-index: 5000;
+        transition: box-shadow .5s;
+
+    }
+    .shadow{
+        box-shadow: 0 2px 15px black;
+    }
+    .nav-btn{
+        display: none;
+    }
+    .nav{
+        position: static;
+    }
+    .menu{
+        display: flex;
+    }
+    .menu-element{
+        width: 100%;
+    }
+    .menu-element__link{
+        background: white;
+        color: #999;
+        font-size: 20px;
+        font-weight: lighter;
+        padding: 20px 0;
+    }
+    .menu-element__link:hover,
+    .focus{
+        background: var(--main-color);
+        color: white;
+        font-weight: bold;
+    }
+
+    .main-content{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .section{
+        margin: 100px 0;
+    }
+    .article{
+        margin: 50px 0;
+    }
+    .cover{
+        position: relative;
+    } 
+    .dark-layer{
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgba(0,0,0,70%);
+        width: 100%;
+        height: 100%;
+        z-index: 2000;
+    } 
+    .article-title{
+        position: absolute;
+        bottom: 50%;
+        left: 50%;
+        transform: translateY(50%) translateX(-50%);
+        text-align: center;
+      
+        z-index: 3000;
+        color: #fff;
+        font-size: 4rem;
+    }
+}
+.article-info{
+    font-size: var(--data-size);
+}
+/*=============DESKTOP LARGE DISPLAY================*/
+@media screen and (min-width: 1920px) {
+    :root{
+        --paragraph-size: 1.8rem;  
+        --brand-size: 28px;    
+        --icon-size: 3.3rem;
+        --text-size: 1.6rem;
+        --titles-size: 2rem; 
+        --data-size: 1.3rem;
+    }
+}
