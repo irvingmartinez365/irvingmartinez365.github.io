@@ -1,7 +1,7 @@
 /*===========|FONTS FROM GOOGLE FONTS|==============*/
 
     /*------|ROBOTO FONT|------*/
-    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&family=Oswald:wght@300;400;600;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap');
     /*-----------|WORK SANS FONT|-----------*/
     @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap');
 
@@ -104,12 +104,9 @@ ul{
     }
     /*----|MAIN STYLES|------*/
     .main-content{
-        margin: 60px 10px;
+        margin: 0 10px;
         min-height: 70vh;
      
-    }
-    .section{
-  
     }
     .section-title{
         color: var(--main-color);
@@ -123,13 +120,7 @@ ul{
         font-size: var(--text-size);
     }
     
-    .about-this-page{
-        margin-top: 60px;
-    }
-    .welcome{
-        text-align: center;
-        margin-bottom: 60px;
-    }
+    
     /*---------|FOOTER STYLES|-----------*/
     .footer{
         height: 275px;
@@ -333,15 +324,10 @@ code{
 
     .main-content{
         width: 90%;
-        margin: 100px auto;
+        margin: 0 auto;
     }
     
-    .about-this-page{
-        margin-top: 100px;
-    }
-    .welcome{
-        margin-bottom: 100px;
-    }
+    
     
     .article{
         margin: 50px 0;

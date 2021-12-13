@@ -24,6 +24,7 @@
 
         <!----------| STYLES CSS |--------->
         <link rel="stylesheet" href="styles/general-styles.css">
+        <link rel="stylesheet" href="styles/articulos.css">
         
         <!------------| SCRIPTS |---------->
         <script defer src="js/menu.js"></script>
@@ -50,24 +51,53 @@
         </header>
 
         <!----------| MAIN |---------->
-        <main class="main-content">
-            <div class="content-filter">
-                <label class="content-filter__label">
-                    Ordenar por:
-                    <select class="content-filter__select" id="filter">
-                        <option class="content-filter__option" value="1">Nombre</option>
-                        <option class="content-filter__option" value="2">Fecha de publicacion mas reciente</option>
-                        <option class="content-filter__option" value="3">Fecha de publicacion mas vieja</option>
-                        <option class="content-filter__option" value="4">Tematica</option>
-                    </select>
-                </label>
-            </div>
+        <main class="main-content">   
             <section class="section all-articles">
-                <h2 class="section-title">Todos los artículos</h2>
-                <div class="article-link">
-                    
+                <h2 class="section-title all-articles__title">Todos los artículos</h2>
+                <div class="content-filter">
+                    <label class="content-filter__label">
+                        Ordenar por:
+                        <select class="content-filter__select" id="filter">
+                            <option class="content-filter__option" value="1">Nombre</option>
+                            <option class="content-filter__option" value="2">Fecha de publicacion +</option>
+                            <option class="content-filter__option" value="3">Fecha de publicacion -</option>
+                            <option class="content-filter__option" value="4">Tematica</option>
+                        </select>
+                    </label>
                 </div>
-
+                <a href="error.html" class="article-link">
+                    <div class="article-container">
+                        <h3 class="article-container__name">Nombre completo del articulo</h3>
+    
+                        <p class="article-container__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias culpa quidem fuga? Quas dolores facere nemo iusto tenetur necessitatibus nostrum ab, et eos suscipit repudiandae cumque veniam. Cupiditate, delectus veritatis!</p>
+                        <p class="article-container__topic">Tematica: <span class="topic">Tecnologia</span></p>
+                    </div>
+                </a>
+                <a href="error.html" class="article-link">
+                    <div class="article-container">
+                        <h3 class="article-container__name">Nombre completo del articulo</h3>
+    
+                        <p class="article-container__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias culpa quidem fuga? Quas dolores facere nemo iusto tenetur necessitatibus nostrum ab, et eos suscipit repudiandae cumque veniam. Cupiditate, delectus veritatis!</p>
+                        <p class="article-container__topic">Tematica: <span class="topic">Tecnologia</span></p>
+                    </div>
+                </a>
+                <a href="error.html" class="article-link">
+                    <div class="article-container">
+                        <h3 class="article-container__name">Nombre completo del articulo</h3>
+    
+                        <p class="article-container__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias culpa quidem fuga? Quas dolores facere nemo iusto tenetur necessitatibus nostrum ab, et eos suscipit repudiandae cumque veniam. Cupiditate, delectus veritatis!</p>
+                        <p class="article-container__topic">Tematica: <span class="topic">Tecnologia</span></p>
+                    </div>
+                </a>
+                <a href="error.html" class="article-link">
+                    <div class="article-container">
+                        <h3 class="article-container__name">Nombre completo del articulo</h3>
+    
+                        <p class="article-container__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias culpa quidem fuga? Quas dolores facere nemo iusto tenetur necessitatibus nostrum ab, et eos suscipit repudiandae cumque veniam. Cupiditate, delectus veritatis!</p>
+                        <p class="article-container__topic">Tematica: <span class="topic">Tecnologia</span></p>
+                    </div>
+                </a>
+                
             </section>
         </main>
 
