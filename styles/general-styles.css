@@ -104,11 +104,12 @@ ul{
     }
     /*----|MAIN STYLES|------*/
     .main-content{
-        margin: 0 10px;
+        margin: 60px 10px;
         min-height: 70vh;
+     
     }
     .section{
-        margin: 60px 0;
+  
     }
     .section-title{
         color: var(--main-color);
@@ -121,8 +122,13 @@ ul{
     .message{
         font-size: var(--text-size);
     }
+    
+    .about-this-page{
+        margin-top: 60px;
+    }
     .welcome{
         text-align: center;
+        margin-bottom: 60px;
     }
     /*---------|FOOTER STYLES|-----------*/
     .footer{
@@ -327,11 +333,16 @@ code{
 
     .main-content{
         width: 90%;
-        margin: 0 auto;
+        margin: 100px auto;
     }
-    .section{
-        margin: 100px 0;
+    
+    .about-this-page{
+        margin-top: 100px;
     }
+    .welcome{
+        margin-bottom: 100px;
+    }
+    
     .article{
         margin: 50px 0;
     }

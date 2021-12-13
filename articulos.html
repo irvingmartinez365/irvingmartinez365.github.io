@@ -51,20 +51,22 @@
 
         <!----------| MAIN |---------->
         <main class="main-content">
-            <div>
-                <label>
+            <div class="content-filter">
+                <label class="content-filter__label">
                     Ordenar por:
-                    <select>
-                        <option value="1">Nombre</option>
-                        <option value="2">Fecha de publicacion mas reciente</option>
-                        <option value="3">Fecha de publicacion mas vieja</option>
-                        <option value="4">Tematica</option>
+                    <select class="content-filter__select" id="filter">
+                        <option class="content-filter__option" value="1">Nombre</option>
+                        <option class="content-filter__option" value="2">Fecha de publicacion mas reciente</option>
+                        <option class="content-filter__option" value="3">Fecha de publicacion mas vieja</option>
+                        <option class="content-filter__option" value="4">Tematica</option>
                     </select>
                 </label>
             </div>
             <section class="section all-articles">
-
-
+                <h2 class="section-title">Todos los artículos</h2>
+                <div class="article-link">
+                    
+                </div>
 
             </section>
         </main>
