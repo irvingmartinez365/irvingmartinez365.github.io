@@ -105,6 +105,7 @@ ul{
     /*----|MAIN STYLES|------*/
     .main-content{
         margin: 0 10px;
+        min-height: 70vh;
     }
     .section{
         margin: 60px 0;
@@ -133,6 +134,7 @@ ul{
         display: flex;    
         justify-content: center;
         align-items: center;
+        width: 100%;
     
     }
    
