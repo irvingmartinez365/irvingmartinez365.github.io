@@ -29,6 +29,7 @@
         <!------------| SCRIPTS |---------->
         <script defer src="js/menu.js"></script>
         <script defer src="js/scroll-shadow.js"></script>
+        <script defer src="js/articles.js"></script>
 
         <title>ArticulosDivulgativos | Articulos</title>
     </head>
@@ -65,39 +66,8 @@
                         </select>
                     </label>
                 </div>
-                <section class="articles-list">
-                    <a href="error.html" class="article-link">
-                        <div class="article-container">
-                            <h3 class="article-container__name">Nombre completo del articulo</h3>
-        
-                            <p class="article-container__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias culpa quidem fuga? Quas dolores facere nemo iusto tenetur necessitatibus nostrum ab, et eos suscipit repudiandae cumque veniam. Cupiditate, delectus veritatis!</p>
-                            <p class="article-container__topic">Tematica: <span class="topic">Tecnologia</span></p>
-                        </div>
-                    </a>
-                    <a href="error.html" class="article-link">
-                        <div class="article-container">
-                            <h3 class="article-container__name">Nombre completo del articulo</h3>
-        
-                            <p class="article-container__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias culpa quidem fuga? Quas dolores facere nemo iusto tenetur necessitatibus nostrum ab, et eos suscipit repudiandae cumque veniam. Cupiditate, delectus veritatis!</p>
-                            <p class="article-container__topic">Tematica: <span class="topic">Tecnologia</span></p>
-                        </div>
-                    </a>
-                    <a href="error.html" class="article-link">
-                        <div class="article-container">
-                            <h3 class="article-container__name">Nombre completo del articulo</h3>
-        
-                            <p class="article-container__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias culpa quidem fuga? Quas dolores facere nemo iusto tenetur necessitatibus nostrum ab, et eos suscipit repudiandae cumque veniam. Cupiditate, delectus veritatis!</p>
-                            <p class="article-container__topic">Tematica: <span class="topic">Tecnologia</span></p>
-                        </div>
-                    </a>
-                    <a href="error.html" class="article-link">
-                        <div class="article-container">
-                            <h3 class="article-container__name">Nombre completo del articulo</h3>
-        
-                            <p class="article-container__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias culpa quidem fuga? Quas dolores facere nemo iusto tenetur necessitatibus nostrum ab, et eos suscipit repudiandae cumque veniam. Cupiditate, delectus veritatis!</p>
-                            <p class="article-container__topic">Tematica: <span class="topic">Tecnologia</span></p>
-                        </div>
-                    </a>
+                <section class="articles-list" id="articles-contianer">
+                    
                 </section>
             </section>
         </main>
@@ -117,7 +87,22 @@
             </address>
         </footer>
 
+
+        <!------------------| TEMPLATE |------------------->
+
+        <template id="articulo-template">
+            <a href="error.html" class="article-link" id="article-template__link">
+                <div class="article-container">
+                    <h3 class="article-container__name" id="article-template__name">Nombre completo del articulo</h3>
+
+                    <p class="article-container__txt" id="article-template__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias culpa quidem fuga? Quas dolores facere nemo iusto tenetur necessitatibus nostrum ab, et eos suscipit repudiandae cumque veniam. Cupiditate, delectus veritatis!</p>
+                    <p class="article-container__topic" id="article-template__topic">Tematica: <span class="topic">Tecnologia</span></p>
+                </div>
+            </a>
+        </template>
+
         <!------------------| ICONS FROM FONTAWESOME |----------------->
         <script src="https://kit.fontawesome.com/be7646c638.js" crossorigin="anonymous"></script>
+
     </body>
 </html>
