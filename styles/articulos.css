@@ -5,9 +5,11 @@
     margin-top: 15px;
 
 }
-
+.top-container{
+    margin-bottom: 15px;
+}
 .content-filter{
-    margin: 15px 0;
+    margin-top: 15px;
     font-size: 1.15rem;
 }
 .content-filter__select,
@@ -59,4 +61,20 @@
 .topic{
     color: var(--main-color);
     font-weight: normal;
+}
+
+@media screen and (min-width: 1020px){
+    .top-container{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 25px;
+    }
+    .article-container{
+        margin-bottom: 50px;
+        background-color: rgba(253,224, 197);
+        padding: 10px;
+    }
+    .article-link:focus .article-container{
+        color: #fff;
+    }
 }
