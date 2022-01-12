@@ -3,7 +3,7 @@ const title = document.getElementsByTagName('title')[0];
 
 const xhr = new XMLHttpRequest();
 
-xhr.open('GET', 'http://localhost:5500/js/json/articles-info.json');
+xhr.open('GET', 'https://irvingmartinez365.github.io/js/json/articles-info.json');
 xhr.responseType = 'json';
 
 xhr.addEventListener('load', () => {
@@ -21,7 +21,7 @@ xhr.addEventListener('load', () => {
     
     const xhr2 = new XMLHttpRequest();
 
-    xhr2.open('GET', `http://localhost:5500/articles/${archiveName}`);
+    xhr2.open('GET', `https://irvingmartinez365.github.io/articles/${archiveName}`);
     xhr2.responseType = "html";
 
     xhr2.addEventListener('load', () => {
