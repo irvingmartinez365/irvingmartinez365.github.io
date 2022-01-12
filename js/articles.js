@@ -14,14 +14,16 @@ xhr.addEventListener('load', () => {
     const frag = document.createDocumentFragment();
 
     for(const info of response){
-        /* let link = `lectura.html?articleID=${info["id"]}` */
+        let link = `lectura.html?articleID=${info["id"]}`;
+        // console.log(link)
+        template.querySelector('#article-template__link').setAttribute('href', link);
         template.querySelector('#article-template__name').textContent = info["name"];
         template.querySelector('.article-container #article-template__txt').textContent = info["description"];
         template.querySelector('.article-container #article-template__topic span').textContent = info["topic"];
 
         const element = template.cloneNode(true);
 
-        console.log(element);
+        //console.log(element);
         frag.appendChild(element);
     }
 

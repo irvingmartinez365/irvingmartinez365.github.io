@@ -30,6 +30,7 @@
         <script defer src="js/menu.js"></script>
         <script defer src="js/scroll-shadow.js"></script>
 
+
         <title>ArticulosDivulgativos | Inicio</title>
     </head>
 
@@ -60,148 +61,9 @@
             <hr class="divition">
             
             <!------------------| ARTICLE |------------->
-            <article class="article">
-                <header class="article-header">
-                    <div class="cover">
-                        <h3 class="article-title">¿Cómo se hacen las páginas web?</h3>
-                        <img class="cover-img" src="assets/img/html-code.webp" alt="codigo html">
-                        <div class="dark-layer"></div>
-                    </div>
-                    <span class="article-author">Por: <strong class="article-author__name">Irving Mendoza Martinez</strong></span>
-                </header>
+            <div id="article-http-container">
                 
-                <section class="article-section">
-                    <h4 class="subtitle">Comencemos . . .</h4>
-                    <p class="paragraph">Todos hemos entrado alguna vez a una página web o puede que incluso las usemos en nuestra vida cotidiana, ya sea por el trabajo, la escuela o el ocio. Son bastante útiles debido a la información que algunas nos pueden proporcionar podemos informarnos un determinado tema, usar las herramientas que nos brindan o entretenernos.</p>
-                    <p class="paragraph">Sin embargo, sabemos muy poco con respecto a su funcionamiento o del proceso que hay para crearlas, subirlas a internet y los conocimientos sobre <strong class="strong">tecnologías</strong>  y <strong class="strong">lenguajes</strong>  para hacerlo.</p>
-                    <p class="paragraph">En este texto se tratara de abarcar el como y lo que conlleva crear una página de internet profundizando sólo lo suficiente como para tener una idea clara del proceso y del porqué de ciertas cosas, a la vez que se hace de manera comprensible para cualquiera y así poder conocer más sobre el funcionamiento de lo que usamos. Podría ser servirte si te interesa el <strong class="strong">desarrollo web</strong> o bien puede simplemente ser algo interesante al tener la curiosidad de conocer y descubrir algo nuevo.</p>
-                </section>
-                <section class="article-section">
-                    <h4 class="subtitle">¿Qué es realmente una página web?</h4>
-                    
-                    <p class="paragraph">Una <strong class="strong">página web</strong> básicamente es un documento, específicamente un <strong class="strong">documento HTML</strong>, en dicho documento se escribe <strong class="strong">código HTML</strong> (HyperText Markup Language), el cual se usa para representar <strong class="strong">elementos</strong> que estructuran la información de la página, por ejemplo: textos, hipervínculos (links), imágenes, vídeos, tablas, formularios, contenedores de información, etc.</p>
-
-                    <img class="article-img small-img" src="assets/img/doc-html.svg" alt="documento html">
-
-                    <p class="paragraph">El documento puede ser subido a internet y así formar parte de la <strong class="strong">World Wide Web</strong> o simplemente <strong class="strong">web</strong>, que es el nombre con el que se conoce al conjunto de páginas subidas a internet que existen. En resumen una página web es un documento HTML que está en la web.</p>
-
-                    <p class="paragraph">Este tipo de documento puede ser leído por un  <strong class="strong">navegador web</strong>, existen varios de éstos: Google Chrome, Mozilla Firefox, Microsoft Edge, Opera, Safari y el recientemente popularizado Brave, entre otros.
-                    </p>
-                    <p class="paragraph">Todos estos son programas que al leer el código HTML pueden mostrarnos la información con el formato indicado en dicho código, ósea mostrarnos la página web. En el código está toda la información, la cual debe estar estructurada de manera que el navegador pueda saber que es cada cosa: títulos, párrafos, enlistados, cabeceras, contenido principal, contenido secundario, pie de página, etc.</p>
-                    <p class="paragraph">Junto a esto, los navegadores también permiten localizar una página específica entre la web, esto por medio de una dirección llamada <strong class="strong">URL</strong>, que es una dirección única para cada página.</p>
-
-                    <img class="article-img" src="assets/img/ejemplo.webp" alt="codigo a pagina web">
-                </section>
-
-                <section class="article-section">
-                    <h4 class="subtitle" id="subtitle-lenguajeHtml">Lenguaje HTML</h4>
-                    
-                    <p class="paragraph">Como ya se mencionó, el documento HTML debe contener código en <strong class="strong">lenguaje HTML</strong>, en éste código, principalmente, se marca toda la estructura de la página. Las reglas y patrones para escribir este código (sintaxis) se basan en <strong class="strong">etiquetas</strong> las cuales son la representación de los <strong class="strong">elementos</strong> de la página.</p>
-
-                    <p class="paragraph">Algunas de las etiquetas más importantes para representar elementos son:
-                    </p>
-
-                    <ul class="list">
-                        <li class="list-element"><strong>Etiquetas h: </strong> titulos</li>
-                        <li class="list-element"><strong>Etiqueta p: </strong> parrafos</li>
-                        <li class="list-element"><strong>Etiqueta a: </strong> hipervinculos</li>
-                        <li class="list-element"><strong>Etiqueta img: </strong> imagenes</li>
-                        <li class="list-element"><strong>Etiqueta div: </strong> contenedor para agrupar contenido</li>
-                    </ul>
-
-                    <p class="paragraph">Existe una enorme variedad de etiquetas en HTML que cumplen diversas funciones en la estructuración de la página y de su contenido. Toda cosa que puede ser representada por una etiqueta HTML dentro del viewport se conoce como <strong class="strong">elemento HTML</strong>.</p>
-
-                    <p class="paragraph">Para ver las muchas otras etiquetas que existen, se pude ver la documentacion de la MDN: <a class="link" href="https://developer.mozilla.org/es/docs/Web/HTML/Element" target="_blank">Referencia de Elementos HTML | MDN</a></p>
-
-                    <div class="notecard">
-                        <p class="notecard__txt"><b>Nota:</b> se puede ver el código HTML de cualquier página web. Esto se hace presionando F12 y después haciendo click en el inspector, para salir se vuelve a presionar la tecla.</p>
-                    </div>
-
-                    <p class="paragraph">De esta manera es básicamente como se escribe el código HTML de una página. Pero una página no solo es información, imágenes y links; También tiene que verse estéticamente bien y ahí es donde entra otro lenguaje llamado <strong class="strong">CSS</strong>.</p>
-                </section>
-                <section class="article-section">
-                    <h4 class="subtitle" id="subtitle-aspectoVisualConCss">Aspecto visual con CSS</h4>
-
-                    <p class="paragraph">Después de definir la estructura de la página con HTML, se necesita una forma de poder establecer <strong class="strong">colores</strong>, <strong class="strong">fuentes de letra</strong>, crear <strong class="strong">animaciones</strong>, poder <strong class="strong">mover y posicionar la información</strong>, etc. Esto se hace con el lenguaje CSS (Cascade Style Sheets), un lenguaje para modificar las <strong class="strong">propiedades</strong> por defecto de los elementos HTML. </p>
-
-                    <p class="paragraph">Algunas de las propiedades que tienen los elementos html son: </p>
-                    <ul class="list">
-                        <li class="list-element"><b>color</b> - El color del texto del elemento.<br>Ejemplo: <code>color: #0000FF;</code> (azul)</li>
-                        <li class="list-element"><b>background-color</b> - el color del fondo del elemento.<br>Ejemplo: <code>background-color: #000000;</code> (negro)</li>
-                        <li class="list-element"><b>width</b> - El tamaño o el ancho de un elemento.<br>Ejemplo: <code>width: 40px;</code> (40 pixeles)</li>
-                        <li class="list-element"><b>height</b> - El largo del elemento.<br>Ejemplo: <code>height: 40px;</code></li>
-                        <li class="list-element"><b>font-size</b> - Tamaño de letra.<br>Ejemplo: <code>font-size: 16px;</code></li>
-                        <li class="list-element"><b>font-family</b> - Tipo de fuente.<br>Ejemplo: <code>font-family: sans-serif;</code></li>
-                    </ul>
-
-                    <p class="paragraph">Los elementos HTML tienen una infinidad de propiedades y todas ellas pueden modificarse con CSS, esto nos permite poder darle un buen <strong class="strong">aspecto visual</strong> a la página.</p>
-
-                    <p class="paragraph">El código CSS se puede escribir directamente en el mismo documento pero es más recomendable hacerlo en un archivo por separado y posteriormente enlazarlo con el documento.</p>
-                </section>
-                <section class="article-section">
-                    <h4 class="subtitle" id="subtitle-JS">Comportamiento, funcionalidades y otras cosas con JavaScript</h4>
-
-                    <p class="paragraph">Los dos lenguajes ya anterior mencionados (HTML y CSS), podrían ser ya suficientes para crear una página informativa simple, sin embargo incluso si se trata de la elaboración de una página muy sencilla puede ser necesario algo más, ya que puede existir la necesidad de hacer que la pagina sea mas dinamica. Ahí es donde entra JavaScript que junto a HTML y CSS conforman las <strong class="strong">tres tecnologías</strong> base para crear una página web</p>
-
-                    <p class="paragraph">Pero, ¿para qué sirve exactamente JavaScript? JavaScript es un <strong class="strong">lenguaje de programación</strong> que fue creado para ser usado junto a HTML y así hacer las páginas más interactivas y dinámicas o para que se cumpla alguna función específica que no se puede hacerse con HTML y CSS.</p>
-
-                    <p class="paragraph">Algunas de las cosas que permite hacer JavaScript son las siguientes: </p>
-
-                    <ul class="list">
-                        <li class="list-element">Actualizar el contenido de una página sin necesidad de tocar el código HTML.</li>
-                        <li class="list-element">Hacer animaciones.</li>
-                        <li class="list-element">Verificar los datos de un formulario.</li>
-                        <li class="list-element">Casi cualquier cosa . . .</li>
-                    </ul>
-
-                    <p class="paragraph">Como ya se mencionó, JavaScript es un lenguaje de programación, debido a esto no se explicara a detalle el cómo usarlo ni escribir su código, pues eso sería tema para otra ocasión, ya que explicar y extenderse en los conceptos de la programación podría hacer salir del enfoque principal al lector.</p>
-
-                    <div class="notecard">
-                        <p class="notecard__txt">Para ver ejemplos y desmostraciones de lo que se puede hacer con JS en una pagina puede ver: <a class="notecard__link" href="error.html">Demostraciones del poder de JavaScript</a></p>
-                    </div>
-                   
-                </section>
-                <section class="article-section">
-                    <h4 class="subtitle">¿Cómo trabaja una página web? | Front-end y Back-end</h4>  
-                    <p class="paragraph">Una página web funciona con una arquitectura de <strong class="strong">cliente-servidor</strong>.</p>
-                    <p class="paragraph">El <strong class="strong">servidor</strong> es donde se encuentran los archivos que integran la página (este puede ser una computadora muy potente ubicada en algún centro de datos). </p>
-                    <p class="paragraph">El <strong class="strong">cliente</strong> por su parte, es el navegador web en el dispositivo desde donde el usuario visita la página (un smartphone, tablet, laptop o PC).
-                    </p>
-                    <p class="paragraph">Cuando se accede a una página, lo que sucede es que el cliente hace una <strong class="strong">petición http</strong> al servidor que corresponda con la dirección de la página y tras procesar dicha petición, éste devuelve una <strong class="strong">respuesta http</strong>, osea los archivos necesarios para cargar la página como el documento html, hoja de estilos, scripts, imágenes, videos, etc.</p>
-                    
-                    <p class="paragraph">Y con esto podemos saber en lo que consiste el <strong class="strong">front-end</strong> y el <strong class="strong">back-end</strong>: </p>
-                    <section class="article-section">
-                        <h5 class="subtitle-l-2">Front-end</h5>
-                        <p class="paragraph">El front-end es el desarrollo de la parte de la página  que se ejecutará del lado del <strong class="strong">cliente</strong> (con la que el usuario interactúa directamente), es decir, los archivos que el servidor envíara al cliente por medio de la respuesta http tras haber sido solicitados y a su vez es todo lo que se ha visto hasta éste punto en éste articulo (<a class="link" href="#subtitle-lenguajeHtml">HTML</a>,<a class="link" href="#subtitle-aspectoVisualConCss">CSS</a>,<a href="#subtitle-JS" class="link">JavaScript</a>).</p>
-
-                        <h5 class="subtitle-l-2">Back-end</h5>
-                        <p class="paragraph">El back-end, en cambio, es la parte que se encarga de lo que ocurre del lado del <strong class="strong">servidor</strong>, por ejemplo el software que valida la información (usando lenguajes de programación), las <strong class="strong">bases de datos</strong>, la administración de los recursos, etc. Al igual que en JavaScript, no se ahondará mucho en el tema del back-end, se simplificará diciendo que esta es “la parte trasera” de una página web, además es posible hacer una página web sin saber sobre back-end ya que muchos servicios de alojamiento cubren esa parte.</p>
-                    </section>
-                    
-                </section>
-                <section class="article-section">
-                    <h4 class="subtitle">Subir a internet</h4>
-                    <p class="paragraph">Una vez que ya se ha desarrollado tanto la parte de front-end y la del back-end el sitio web debe ser <strong class="strong">alojado</strong> en un servidor donde la parte del front-end será almacenada y donde se ejecutará lo desarrollado por el back-end (de nuevo, la parte del back-end puede ser omitida si se trata de algo muy simple ya que hay hostings que se encargan de ésto).</p>
-                    <p class="paragraph">Para subirla se tiene más de una opción, se puede alojar en un <strong class="strong">hosting</strong> (un servidor compartido), existen varias opciones de hosting, algunas son gratuitas y otras de pago. Otra opción también es el <strong class="strong">almacenamiento en la nube</strong>.</p>
-                    <p class="paragraph">Y una vez hecho ésto, se ha concluido el desarrollo de la página. Pero a pesar de eso, el proyecto puede ir escalando según su crecimiento o por el surgimiento de nuevas tecnologías y la obsolescencia de otras.</p>
-                </section>
-                <section class="article-section">
-                    <h4 class="subtitle">En conclución</h4>
-                    <p class="paragraph">Para crear una página web (al menos para la parte del front-end) <strong class="strong">se usan tres tecnologías básicas: HTML, CSS y JavaScript</strong>.</p>
-                    <p class="paragraph">HTML <strong class="strong">plasma la información</strong> y la semántica de la página en el documento , CSS <strong class="strong">modifica el aspecto visual</strong> por defecto para poder personalizarlo y JavaScript da <strong class="strong">interactividad y dinamismo</strong> a la página, justo como un programa o aplicación. </p>
-                    <p class="paragraph">Aparte se usan tecnologías que corren del lado del servidor como bases de datos y lenguajes de programación para back-end. Cuando la página es terminada ésta es alojada en un servidor para que se pueda acceder a ella desde el navegador de cualquier dispositivo con internet. </p>
-                    <p class="paragraph">Este artículo no pretende ser una guía completa de cómo desarrollar una página web. En la web existe una infinidad información más completa que la presente.</p>
-
-                    <p class="paragraph">Gracias por leer.</p>
-                </section>
-                
-                <footer class="article-footer">
-                    <address class="article-info">
-                        <p>Publicado el: <time class="post-date">03/12/2021</time></p>
-                        <p>Redactado por: Irving Mendoza Martínez</p>
-                    </address>
-                </footer> 
-            </article>
+            </div>
 
             <hr class="divition">
 
