@@ -5,27 +5,6 @@
         "description": "¿Alguna vez te has preguntado como se hace las paginas web?, son lago que usamos a diario sin embago sabemos muy poco sobre su funcionamiento, si te interesa el desarrollo web o simplemente tienes curiosisdad, este articulo podria interesarte.",
         "topic": "Tecnologia",
         "archive": "make-web-pages.html"
-    },
-    {
-        "id": 2,
-        "name": "¿Como se hacen las empanadas?",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod voluptatem quia, laborum rem earum dolorum recusandae qui sequi optio doloremque asperiores inventore sapiente ducimus repudiandae blanditiis. Consequatur dolore excepturi aperiam?",
-        "topic": "Concina",
-        "archive": ""
-    },
-    {
-        "id": 3,
-        "name": "La misoginia de Socrates",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quod dicta impedit. Sed dolore quos minus eos pariatur earum maxime soluta! Impedit amet hic saepe natus ducimus illo suscipit consequatur.",
-        "topic": "Historia",
-        "archive": ""
-    },
-    {
-        "id": 4,
-        "name": "¿Que es la web 3.0?",
-        "description": "¿Alguna vez te has preguntado como se hace las paginas web?, son lago que usamos a diario sin embago sabemos muy poco sobre su funcionamiento, si te interesa el desarrollo web o simplemente tienes curiosisdad, este articulo podria interesarte.",
-        "topic": "Tecnologia",
-        "archive": ""
     }
     
 ]

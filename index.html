@@ -29,6 +29,7 @@
         <!------------| SCRIPTS |---------->
         <script defer src="js/menu.js"></script>
         <script defer src="js/scroll-shadow.js"></script>
+        <script defer src="js/articles-content-petition.js"></script>
 
 
         <title>ArticulosDivulgativos | Inicio</title>
@@ -53,24 +54,57 @@
 
         <!----------| MAIN |---------->
         <main class="main-content">
-            <section class="section welcome">
-                <h2 class="section-title">Bienvenido a esta pagina</h2>
-                <p class="section-txt">Hola, esta es mi página y tengo pensado que esta sea sobre artículos de diferentes temas.</p>
-                <span class="message">Espero que la página sea de tu agrado :)</span> 
+            <section class="section welcome container--flex">
+                <div class="welcome-container">
+                    <h2 class="section-title">Bienvenido a esta pagina</h2>
+                    <p class="section-txt">Hola, esta es mi página y tengo pensado que esta sea sobre artículos de diferentes temas. Puedes ir a <a  href="articulos.html">Articulos</a> para verlos.</p>
+                    <span class="message">Espero que la página sea de tu agrado :)</span> 
+                </div>
             </section>
-            <hr class="divition">
-            
+            <div class="divition"></div>
             <!------------------| ARTICLE |------------->
-            <div id="article-http-container">
+            <section class="the-first-article section">
+                <h2 class="section-title">Articulo destacado</h2>
+                <p class="paragraph">Entre todos los articulos que hay en la pagina puedes ver aqui el mas destacado(o el uncio por ahora). <br>Si quieres leerlo completo has <a class="link" href="lectura.html?articleID=1">click aqui</a></p>
+                <p class="paragraph">Articulo mas destacado: </p>
+                <article class="article-preview">
+                    <h3 class="article-title-preview">¿Cómo se hacen las páginas web?</h3>
+                    <section class="article-section">
+                        <h4 class="subtitle">Comencemos . . .</h4>
+                        <p class="paragraph">Todos hemos entrado alguna vez a una página web o puede que incluso las usemos en nuestra vida cotidiana, ya sea por el trabajo, la escuela o el ocio. Son bastante útiles debido a la información que algunas nos pueden proporcionar podemos informarnos un determinado tema, usar las herramientas que nos brindan o entretenernos.</p>
+                        <p class="paragraph">Sin embargo, sabemos muy poco con respecto a su funcionamiento o del proceso que hay para crearlas, subirlas a internet y los conocimientos sobre <strong class="strong">tecnologías</strong>  y <strong class="strong">lenguajes</strong>  para hacerlo.</p>
+                        <p class="paragraph">En este texto se tratara de abarcar el como y lo que conlleva crear una página de internet profundizando sólo lo suficiente como para tener una idea clara del proceso y del porqué de ciertas cosas, a la vez que se hace de manera comprensible para cualquiera y así poder conocer más sobre el funcionamiento de lo que usamos. Podría ser servirte si te interesa el <strong class="strong">desarrollo web</strong> o bien puede simplemente ser algo interesante al tener la curiosidad de conocer y descubrir algo nuevo.</p>
+                    </section>
+                    <section class="article-section">
+                        <h4 class="subtitle">¿Qué es realmente una página web?</h4>
+                        
+                        <p class="paragraph">Una <strong class="strong">página web</strong> básicamente es un documento, específicamente un <strong class="strong">documento HTML</strong>, en dicho documento se escribe <strong class="strong">código HTML</strong> (HyperText Markup Language), el cual se usa para representar <strong class="strong">elementos</strong> que estructuran la información de la página, por ejemplo: textos, hipervínculos (links), imágenes, vídeos, tablas, formularios, contenedores de información, etc.</p>
                 
-            </div>
+                        <img class="article-img small-img" src="assets/img/doc-html.svg" alt="documento html">
+                
+                        <p class="paragraph">El documento puede ser subido a internet y así formar parte de la <strong class="strong">World Wide Web</strong> o simplemente <strong class="strong">web</strong>, que es el nombre con el que se conoce al conjunto de páginas subidas a internet que existen. En resumen una página web es un documento HTML que está en la web.</p>
+                
+                        <p class="paragraph">Este tipo de documento puede ser leído por un  <strong class="strong">navegador web</strong>, existen varios de éstos: Google Chrome, Mozilla Firefox, Microsoft Edge, Opera, Safari y el recientemente popularizado Brave, entre otros.
+                        </p>
+                        <p class="paragraph">Todos estos son programas que al leer el código HTML pueden mostrarnos la información con el formato indicado en dicho código, ósea mostrarnos la página web. En el código está toda la información, la cual debe estar estructurada de manera que el navegador pueda saber que es cada cosa: títulos, párrafos, enlistados, cabeceras, contenido principal, contenido secundario, pie de página, etc.</p>
+                        <p class="paragraph">Junto a esto, los navegadores también permiten localizar una página específica entre la web, esto por medio de una dirección llamada <strong class="strong">URL</strong>, que es una dirección única para cada página.</p>
+                
+                        <img class="article-img" src="assets/img/ejemplo.webp" alt="codigo a pagina web">
+                    </section>
+                
+                    <section class="article-section">
+                        <h4 class="subtitle" id="subtitle-lenguajeHtml">Lenguaje HTML</h4>
+                        
+                        <p class="paragraph">Como ya se mencionó, el documento HTML debe contener código en <strong class="strong">lenguaje HTML</strong>, en éste código, principalmente, se marca toda la estructura de la página. Las reglas y patrones para escribir este código (sintaxis) se basan en <strong class="strong">etiquetas</strong> las cuales son la representación de los <strong class="strong">elementos</strong> de la página. <a class="link" href="lectura.html?articleID=1">Ver articulo completo</a></p>
+                    </section>
+                </article>    
+            </section>
 
-            <hr class="divition">
 
             <section class="section about-this-page">
                 <h2 class="section-title">Sobre ésta página</h2>
-                <p class="section-txt">Ésta página web fue creada usando las tecnologias y metodos especificados en el articulo.</p>
-                <p class="section-txt">Este es un proyecto personal para poner en práctica los conocimientos de desarrollo web que he obtenido a lo largo de aproximadamente 1 año y medio estudiando de manera autodidacta sobre todo ésto. Puedes darme tu opinión sobre la página o sobre el articulo por medio de <a href="https://twitter.com/Irving86671376" class="link" target="_blank">twitter</a> (debido a que aun no tengo la capacidad de crear un sistema de comentarios en esta misma página xd).</p>
+                <p class="section-txt">Ésta página web fue creada usando las tecnologias y metodos que puedes leer en el articulo <a class="link" href="lectura.html?articleID=1">¿Como se hacen las paginas web?</a>.</p>
+                <p class="section-txt">Este es un proyecto personal para poner en práctica los conocimientos de desarrollo web que he obtenido a lo largo de aproximadamente 1 año y medio estudiando de manera autodidacta. Puedes darme tu opinión sobre la página o sobre el articulo por medio de <a href="https://twitter.com/Irving86671376" class="link" target="_blank">twitter</a> (debido a que aun no tengo la capacidad de crear un sistema de comentarios en esta misma página xd).</p>
             </section>
         </main>
 

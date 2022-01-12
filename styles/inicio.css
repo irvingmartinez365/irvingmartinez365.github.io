@@ -1,22 +1,33 @@
-.main-content{
-    margin: 60px 10px;
 
-}
 .about-this-page{
-    margin-top: 60px;
+    margin: 60px 0;
 }
 .welcome{
-    text-align: center;
-    margin-bottom: 60px;
+    height: 100vh;
+    align-items: center;
 }
+.welcome-container{
+    text-align: center;
+}
+.article-title-preview{
+    font-size: 3rem;
+    color: #000;
+}
+.article-preview{
+    margin-top: 50px;
+    box-shadow: #000 5px 5px 30px;
+    padding: 40px 20px 20px 20px;
+}
+
 @media screen and (min-width: 1020px){
-    .main-content{
-        margin: 100px auto;
-    }
-    .about-this-page{
-        margin-top: 100px;
+
+ /*    .about-this-page{
+        margin: 100px 0;
     }
     .welcome{
-        margin-bottom: 100px;
+        margin: 38vh 0;
+    } */
+    .article-title-preview{
+        text-align: center;
     }
 }
