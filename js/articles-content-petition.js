@@ -1,12 +1,17 @@
 const box = document.getElementById('article-http-container');
 const title = document.getElementsByTagName('title')[0];
 
+
 const xhr = new XMLHttpRequest();
 
 xhr.open('GET', 'https://irvingmartinez365.github.io/js/json/articles-info.json');
 xhr.responseType = 'json';
 
+xhr.addEventListener('loadstart', () => {
+    box.innerHTML = '<img style="width: 60px; margin: auto; " src="assets/img/loading.gif" alt="loading">'
+})
 xhr.addEventListener('load', () => {
+    box.removeChild
     const response = xhr.response;
 
     const url = document.URL;
@@ -24,6 +29,7 @@ xhr.addEventListener('load', () => {
     xhr2.open('GET', `https://irvingmartinez365.github.io/articles/${archiveName}`);
     xhr2.responseType = "html";
 
+    
     xhr2.addEventListener('load', () => {
         const html = xhr2.response;
         box.innerHTML = html;

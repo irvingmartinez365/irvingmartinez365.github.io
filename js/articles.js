@@ -7,6 +7,12 @@ const xhr = new XMLHttpRequest();
 
 xhr.open('GET', url);
 xhr.responseType = 'json'
+xhr.addEventListener('loadstart', () => {
+    articlesContainer.innerHTML = '<img style="width: 60px; margin: auto; " src="assets/img/loading.gif" alt="loading">'
+})
+xhr.addEventListener('loadend', () => {
+    articlesContainer.removeChild(articlesContainer.childNodes[0]);
+})
 xhr.addEventListener('load', () => {
     const response = xhr.response;
     
@@ -26,8 +32,8 @@ xhr.addEventListener('load', () => {
         //console.log(element);
         frag.appendChild(element);
     }
-
     articlesContainer.appendChild(frag);
+    
 
 }) 
 
