@@ -48,7 +48,9 @@ ul{
 .container--flex{
     display: flex;
 }
-
+.social-network{
+    color: #000;
+}
 /*---------------------|GENERAL STYLES|---------------------*/
     /*-------|NAV / HEADER STYLES|-------*/
     .header{
@@ -159,8 +161,8 @@ ul{
     .github:hover{
         color: #171515;
     }
-    .discord:hover{
-        color: #7289da;
+    .linkedin:hover{
+        color: #0e76a8;
     }
 
 /*----------|ARTICLE STYLES|-----------*/
