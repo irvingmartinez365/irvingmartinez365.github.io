@@ -1,7 +1,7 @@
 const articlesContainer = document.getElementById('articles-contianer');
 const template = document.getElementById('articulo-template').content;
 
-const url = 'http://localhost:5500/js/json/articles-info.json';
+const url = 'https://irvingmartinez365/js/json/articles-info.json';
 
 const xhr = new XMLHttpRequest();
 
